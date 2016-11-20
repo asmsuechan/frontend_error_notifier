@@ -1,0 +1,14 @@
+<script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+<script>
+window.addEventListener('error', function (e) {
+  $.ajax({
+    type: "POST",
+    url: "/handler",
+    data: { error: e.error }
+  }).done(function( msg ) {
+    console.log(msg)
+  });
+});
+
+aaaaa;
+</script>
